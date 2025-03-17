@@ -48,7 +48,7 @@ CBC-social-media/
 ## Environment Variables Setup
 
 Before running the application, create a .env file for the backend at:
-  ..\repos\CBC-social-media-posting\backend\.env
+  ..\repos\CBC-social-media-posting\backend\\.env
 
 This file should include the following parameters:
 - TWITTER_API_KEY (from your Twitter Developer account)
