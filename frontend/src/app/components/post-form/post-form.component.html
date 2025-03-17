@@ -1,0 +1,52 @@
+<!-- 
+  PostForm Component Template
+  ---------------------------
+  This template renders the post form for message input, platform selection, file uploads, and scheduling.
+-->
+<div class="post-form">
+  <h2>CBC Social Media</h2>
+  
+  <!-- Message input section -->
+  <textarea class="message-box" [(ngModel)]="postMessage" rows="3" placeholder="Enter your message"></textarea>
+  
+  <!-- Platform selection checkboxes -->
+  <div class="platforms">
+    <label>
+      <input type="checkbox" [(ngModel)]="selectedPlatforms['twitter']" />
+      Twitter
+    </label>
+    <label>
+      <input type="checkbox" [(ngModel)]="selectedPlatforms['instagram']" disabled="disabled" />
+      Instagram
+    </label>
+    <label>
+      <input type="checkbox" [(ngModel)]="selectedPlatforms['bluesky']" />
+      Bluesky
+    </label>
+  </div>
+  
+  <!-- File upload section -->
+  <div class="uploads">
+    <div class="upload-row">
+      <label>
+        Image:
+        <input type="file" #imageInput accept="image/*" (change)="onFileSelected($event, 'image')">
+      </label>
+    </div>
+    <div class="upload-row">
+      <label>
+        Video:
+        <input type="file" #videoInput accept="video/*" (change)="onFileSelected($event, 'video')">
+      </label>
+    </div>
+  </div>
+  
+  <!-- Scheduling section -->
+  <div class="schedule">
+    <label for="scheduledAt">Schedule Post:</label>
+    <input type="datetime-local" id="scheduledAt" [(ngModel)]="scheduledAt">
+  </div>
+  
+  <!-- Post button -->
+  <button (click)="postToSelectedPlatforms()">Post</button>
+</div>
