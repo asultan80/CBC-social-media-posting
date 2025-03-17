@@ -30,7 +30,7 @@ CBC-social-media/
 2. **Steps**:
    - Open a terminal and navigate to the project root:
      ```bash
-     cd c:\Users\alex6\source\repos\CBC-social-media
+     cd ..\repos\CBC-social-media-posting
      ```
    - Build and start the containers:
      ```bash
@@ -50,7 +50,7 @@ CBC-social-media/
 ## Environment Variables Setup
 
 Before running the application, create a .env file for the backend at:
-  c:\Users\alex6\source\repos\CBC-social-media\backend\.env
+  ..\repos\CBC-social-media-posting\backend\\.env
 
 This file should include the following parameters:
 - TWITTER_API_KEY (from your Twitter Developer account)
