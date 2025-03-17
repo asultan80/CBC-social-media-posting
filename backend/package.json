@@ -1,10 +1,10 @@
 {
   "name": "backend",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "version": "1.0.0",
+  "description": "CBC Social Media Posting System allows content producers to post messages, images, and videos to multiple social media platforms (e.g., Twitter, Instagram, Bluesky) through an Angular frontend and a NestJS backend using Bull and Redis for scheduling.",
+  "author": "Alexander Sultan-Shakh",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

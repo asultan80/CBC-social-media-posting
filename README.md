@@ -2,6 +2,8 @@
 
 CBC Social Media is a Dockerized full-stack application that consists of a backend, frontend, and a Redis cache. The project utilizes Docker Compose to manage the application services.
 
+CBC Social Media Posting System allows content producers to post messages, images, and videos to multiple social media platforms (e.g., Twitter, Instagram, Bluesky) through an Angular frontend and a NestJS backend using Bull and Redis for scheduling.
+
 ## Project Structure
 
 ```
